@@ -8,6 +8,14 @@ const nextConfig = {
   typescript: {
     // Ignore type errors in build for immediate compilation validation
     ignoreBuildErrors: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/v1/:path*',
+        destination: 'http://localhost:8000/api/v1/:path*',
+      },
+    ];
   }
 };
 
