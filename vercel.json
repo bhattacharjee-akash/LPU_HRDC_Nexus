@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/v1/:path*",
+      "destination": "https://lpu-hrdc-nexus-backend.onrender.com/api/v1/:path*"
+    }
+  ]
+}

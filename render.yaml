@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: lpu-hrdc-nexus-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: backend
+    plan: free
+    region: singapore
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: DATABASE_URL
+        value: postgresql://postgres:postgres@localhost:5432/lpu_hrdc"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: GROQ_API_KEY
+        sync: true

@@ -1,0 +1,22 @@
+{
+  "name": "LPU HRDC Nexus",
+  "short_name": "HRDC Nexus",
+  "description": "AI-Powered Training Lifecycle Management Platform for LPU HRDC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
